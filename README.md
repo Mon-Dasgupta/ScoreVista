@@ -10,7 +10,7 @@ The project is structured as follows:
 
 - `data/`: Raw and processed data files.
 - `notebooks/`: Jupyter Notebooks for data cleaning, preprocessing, and model training.
-- `app/`: Streamlit web application for score prediction.
+- `app`: Streamlit web application for score prediction.
 - `requirements.txt`: List of project dependencies.
 
 ## Data
@@ -23,7 +23,7 @@ The `notebooks/` directory contains Jupyter Notebooks used for data cleaning, pr
 
 ## Streamlit App
 
-The `app/` directory contains the Streamlit web application code (app.py) for integrating the machine learning model with a user-friendly interface.
+The `app` directory contains the Streamlit web application code (app.py) for integrating the machine learning model with a user-friendly interface.
 
 ## Acknowledgments
 

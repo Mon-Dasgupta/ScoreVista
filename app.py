@@ -142,3 +142,12 @@ if st.button('Predict Score', key='predict-button', help="Click to predict the s
     result = loaded_pipeline.predict(input_df)
     st.header("Predicted Score - " + str(int(result[0])))
 
+    st.header("Projected Score :-")
+    # Create three columns
+    coll1, coll2, coll3 = st.columns(3)
+
+    # Display headers in each column
+    coll1.header("@"+str(int(crr - 2))+ "RPO:" + str(round(int(current_score + ((crr - 2) * (20 - overs))))))
+    coll2.header("@CRR"+"("+str(int(crr))+")"+":" +str(round(int((crr) * 20))))
+    coll3.header("@"+str(int(crr+2))+ "RPO:" +str(round(int(current_score + ((crr + 2) * (20 - overs))))))
+
